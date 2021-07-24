@@ -1,0 +1,85 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css';
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(126, 126, 126);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/files/red-planet.jpg');
+    background-size: cover;
+}
+
+#player {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    max-width: 375px;
+    box-shadow: 0px 5px 2px 0px rgb(43, 43, 43), 0px 2px 4px 0px rgb(43, 43, 43), 0px 1px 2px 0px rgb(43, 43, 43);
+    border-radius: 8px;
+    color: white;
+}
+
+.card {
+    box-shadow: none;
+}
+
+h4 {
+    color: rgb(202, 84, 84);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card-image {
+    background-image: url("https://placehold.it/500") no-repeat center center / cover;
+    /*serviço que puxa imagem de 500x500*/
+    height: 250px;
+}
+
+.card-content {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-content p{
+    color: rgb(202, 84, 84);
+}
+
+
+.card-content a{
+    color: rgb(192, 0, 0);
+}
+
+
+audio {
+    margin: 30px;
+    width: 100%;
+}
+
+#play-pause {
+    background-color: rgb(192, 0, 0);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color:rgb(192, 0, 0)
+}
+
+
+#title-artist {
+    margin-bottom: 50px;
+}

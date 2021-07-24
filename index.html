@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyPlaylist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id='player'>
+        <h4><i class='material-icons'>play_arrow</i>MyPlaylist</h4>
+        <div class='card'>
+            <div class='card-image'></div>
+            <div class='card-content'>
+                <h5>Title</h5>
+                <p class='artist' id='title-artist'>Artist</p>
+
+                <div class='row valign-wrapper'>
+                    <!--Barra de tempo da musica-->
+                    <div class="col s2" id="current-duration">00:00</div>
+                    <!--Tempo em que o audio estará tocando-->
+                    <div class="col s6 range-field valign-wrapper">
+                        <input type="range" min='0' max='0' id="seekbar" step="1">
+                        <!--step = pular de 1 em 1-->
+                    </div>
+                    <div class="col s2" id="total-duration">00:00</div>
+                    <div>
+                        <!--botão de volume-->
+                        <a href='#'>
+                            <i class='material-icons' id='mute'>volume_up</i>
+                        </a>
+                    </div>
+                    <div class="col s3 range-field valign-wrapper">
+                        <input type="range" min='0' max='100' id="volume" step="1">
+                    </div>
+                </div>
+                <div class='row valign-wrapper'>
+                    <!--Botões-->
+
+                    <a href='#' class="btn-floating waves-effect waves-teal btn-flat">
+                        <i class='material-icons' id='skip-previous'>skip_previous</i>
+                    </a>
+                    <a href='#' class="btn-floating waves-effect waves-teal btn-flat">
+                        <i class="material-icons" id='play-pause'>play_arrow</i>
+                    </a>
+                    <a href='#' class="btn-floating waves-effect waves-teal btn-flat">
+                        <i class='material-icons' id='skip-next'>skip_next</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/index.js' type='module'></script>
+</body>
+
+</html>

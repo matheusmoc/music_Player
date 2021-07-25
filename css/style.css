@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/files/red-planet.jpg");
+    background-image: url("https://github.com/matheusmoc/music_Player/blob/master/files/red-planet.jpg");
     background-size: cover;
 }
 
